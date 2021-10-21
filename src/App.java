@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class App {
@@ -26,6 +27,14 @@ public class App {
         }
 
         System.out.println((Math.pow(aNext + b, 2)) / (4*t));
+    }
+
+    public static BigDecimal piEstimationBigDec(){
+        return 0.0;
+    }
+
+    public static double piEstimationRecursive(){
+        return 0.0;
     }
 }
 
