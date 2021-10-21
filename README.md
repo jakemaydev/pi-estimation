@@ -1,18 +1,17 @@
-## Getting Started
+## Gauss-Legendre Algorithm
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+https://en.wikipedia.org/wiki/Gauss–Legendre_algorithm
 
-## Folder Structure
+![Gauss-Legendre Algorithm](https://user-images.githubusercontent.com/92412968/138188057-d1ed57fd-2ff7-4cd6-af21-55f8675c1633.png)
 
-The workspace contains two folders by default, where:
+This is a simple program that estimates pi based on the Gauss-Legendre algorithm outlined in the Wikipedia article above.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+This program takes one integer as input for the desired number of iterations to run.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Planning to improve estimation accuracy by using BigDecimal objects rather than primitives.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Bugs encountered and fixed during development:
+  - Bug: Integer division when calculating t = 1/4
+    - Fix: Modify initial calculation to 1/4.0 to implicitly convert result to double
+  - Bug: Incorrect bracketing of equations in result calculation
+    - Fix: Modify bracketing to perform calculations as intended
