@@ -37,7 +37,7 @@ public class App {
         if(iter == 0)
             return Math.pow(aNext + b, 2) / (4*t);
         
-        return piEstimationRecursive(iter = iter - 1, aNext = ((a+b)/2), b = Math.sqrt(a*b), t = t - p*Math.pow((a - aNext), 2), p = 2*p, a = aNext); // iter, aNext, a, b, t, p
+        return piEstimationRecursive(iter - 1, aNext = ((a+b)/2), Math.sqrt(a*b), t - p*Math.pow((a - aNext), 2), 2*p, a = aNext); // iter, aNext, a, b, t, p
         
     }
 }
